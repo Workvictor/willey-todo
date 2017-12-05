@@ -16,7 +16,7 @@ export const task = (
       ...state.slice(),
       {
         ...payload,
-        id: state.length
+        id: state[state.length-1].id+1
       }
     ]
   : type === TYPES.REMOVE_TASK
