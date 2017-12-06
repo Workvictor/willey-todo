@@ -8,7 +8,7 @@ const StyledButton = styled.button`
   border: 2px solid #323232;
   display: inline-block;
   cursor: pointer;
-  background: #fff;
+  background: ${({active})=>active? '#e6e5e5' : '#fff' };
   text-transform: uppercase;
   outline: none;
   margin: 0 16px;
@@ -20,5 +20,6 @@ const StyledButton = styled.button`
 
 export const Button =({
   onClick,
-  text
-})=> <StyledButton onClick={onClick}>{text}</StyledButton>
+  text,
+  active
+})=> <StyledButton active={active} onClick={onClick}>{text}</StyledButton>
