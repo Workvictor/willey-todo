@@ -2,7 +2,6 @@ import { TYPES } from './actions';
 const initial = {
   title: '',
   body: '',
-  isCompleted: false,
   color: 'hsla(0, 100%, 100%, 1)',
 }
 export const edit = (
